@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="./js/require.js" data-main="./js/main"></script>
+</head>
+
+<body>
+    <button onclick="test()">测试</button>
+    <script type="text/javascript">
+    function test() {
+        require(['jquery','util'], function ($,$util) {
+            $util.change();
+            $util.message();
+        })
+    }
+    </script>
+</body>
+
+</html>
